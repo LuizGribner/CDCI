@@ -5,3 +5,7 @@ function abrirPaginaHome(){
 function listarProdutos(){
     console.log("Lista produtos")
 }
+
+function DEVELOP(){
+
+}
