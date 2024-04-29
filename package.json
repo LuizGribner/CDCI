@@ -1,0 +1,27 @@
+{
+  "name": "cdci",
+  "version": "1.0.0",
+  "main": "carrinhodeCompra.js",
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest ./TESTES/carrinhoCompra.test.js ./TESTES/listaProdutos.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.17.1",
+    "babel-jest": "^27.4.5"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  }
+}
