@@ -11,7 +11,7 @@ describe('ListaProdutos', () => {
 
     test('Deve retornar os detalhes do produto', () => {
         expect(ListaProdutos.getProduto()).toBe("Retorna detalhes do produto + categoria");
-    });
+    });   
     
 
     test('Deve retornar produtos similares', () => {
