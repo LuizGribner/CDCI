@@ -1,4 +1,4 @@
-const ListaProdutos = require('../listaProdutos'); // Caminho corrigido para o módulo
+import ListaProdutos from '../listaProdutos'; // Importa usando 'import'
 
 describe('ListaProdutos', () => {
     test('Deve abrir a página inicial', () => {
@@ -13,8 +13,11 @@ describe('ListaProdutos', () => {
         expect(ListaProdutos.getProduto()).toBe("Retorna detalhes do produto + categoria");
     });   
     
-
     test('Deve retornar produtos similares', () => {
         expect(ListaProdutos.getProdutoSimilar()).toBe("Desenvolve produtos similares");
     });
 });
+
+
+
+

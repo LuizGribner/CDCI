@@ -13,13 +13,14 @@ export default class ListaProdutos {
     static getProduto(id) {
         console.log("Retorna detalhes");
         console.log("Retorna detalhes do produto + categoria");
-        return "Retorna detalhes";
+        return "Retorna detalhes do produto + categoria";
     }
 
     static getProdutoSimilar(categoria) {
-        console.log("Desenvole produtos similares");
+        console.log("Desenvolve produtos similares");
         return "Desenvolve produtos similares";
     }
 
 }
-module.exports = ListaProdutos
+
+

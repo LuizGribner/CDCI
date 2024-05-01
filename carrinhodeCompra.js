@@ -1,6 +1,6 @@
-const ListaProdutos = require("./listaProdutos")
+import ListaProdutos from "./listaProdutos";
 
-export default class CarrinhoCompra {
+class CarrinhoCompra {
 
     abrirCarrinho() {
         console.log("Abrir carrinho");
@@ -8,22 +8,23 @@ export default class CarrinhoCompra {
     }
 
     addProdutos() {
-        let dadosProduto = ListaProdutos.getProduto();
+        let dadosProduto = ListaProdutos.getProduto(1);
         console.log("Adiciona produtos");
         return "Adiciona produtos";
     }
 
     deletaProdutos() {
-        let dadosProduto = ListaProdutos.getProduto();
+        let dadosProduto = ListaProdutos.getProduto(1);
         console.log("Remove produtos");
         return "Remove produtos";
     }
 
     checkout() {
-        let dadosProduto = ListaProdutos.getProduto();
+        let dadosProduto = ListaProdutos.getProduto(1);
         console.log("Finaliza");
         return "Finaliza";
     }
 
 }
-module.exports = CarrinhoCompra
+module.exports = CarrinhoCompra;
+
